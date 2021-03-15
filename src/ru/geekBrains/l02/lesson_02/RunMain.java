@@ -28,7 +28,7 @@ public class RunMain {
 
 // -- Check Array size in Constructor
         try {
-            chkArray = new CheckArray(2, 5, st);    // <--- PUT right Dimensions here (max.5x5)!
+            chkArray = new CheckArray(4, 5, st);    // <--- PUT right Dimensions here (max.5x5)!
         } catch (MyArraySizeException ex) {
             System.out.printf("\n>>>Catch Array SIZE Triggered! \n");
             ex.printStackTrace();
