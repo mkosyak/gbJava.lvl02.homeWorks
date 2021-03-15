@@ -5,9 +5,9 @@ public class MyArrayDataException extends RuntimeException {
         super(message);
     }
 
-    public MyArrayDataException(int column, int row, String value) {
-        super("\n Element (column: " + column + ", row: " + row +
-                ", value: '" + value +  "') can not be converted into number!");
+    public MyArrayDataException(String message, Throwable ex) {
+        super(message);
+//        ex.printStackTrace();
     }
 
 }

@@ -18,7 +18,7 @@ public class RunMain {
 //                {"T", "E", "N", "E", "T"},      // v.1.0
 //                {"O", "P", "E", "R", "A"},      // v.1.0
 //                {"R", "O", "T", "A", "S"}       // v.1.0
-                {"1", "#", "3", "4", "5"},       // v.2.0
+                {"1", "2", "3", "4", "5"},       // v.2.0
                 {"1", "2", "3", "4", "5"},       // v.2.0
                 {"1", "2", "3", "4", "5"},       // v.2.0
                 {"1", "2", "3", "4", "5"},       // v.2.0
@@ -28,21 +28,18 @@ public class RunMain {
 
 // -- Check Array size in Constructor
         try {
-            chkArray = new CheckArray(5, 5, st);    // PUT right Dimensions here!
+            chkArray = new CheckArray(6, 5, st);    // PUT right Dimensions here!
         } catch (MyArraySizeException ex) {
             System.out.printf("\n>>>Catch Array SIZE Triggered! \n");
             ex.printStackTrace();
         }
 
 // -- Check whether Array Data Elements are Numbers (aligned to double type)
-        double sumElements = 0.0D;
         try {
-            sumElements = chkArray.getSumElements(st);
-            System.out.printf("the Sum of ALL array elements is . . : %.2f", sumElements);
+            double sumElements = chkArray.getSumElements(st);
+            System.out.printf("%nThe Sum of ALL array elements is . . : %.2f", sumElements);
         } catch (MyArrayDataException ex) {
             System.out.printf("\n>>>Catch Array DATA Triggered! \n");
-            ex.printStackTrace();   
-        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
