@@ -19,16 +19,16 @@ public class RunMain {
 //                {"O", "P", "E", "R", "A"},      // v.1.0
 //                {"R", "O", "T", "A", "S"}       // v.1.0
                 {"1", "2", "3", "4", "5"},       // v.2.0
-                {"1", "2", "#", "4", "5"},       // v.2.0
                 {"1", "2", "3", "4", "5"},       // v.2.0
                 {"1", "2", "3", "4", "5"},       // v.2.0
+                {"1", "2#", "3", "4", "5"},       // v.2.0
                 {"1", "2", "3", "4", "5"}        // v.2.0
         };
         CheckArray chkArray = null;
 
 // -- Check Array size in Constructor
         try {
-            chkArray = new CheckArray(6, 5, st);    // PUT right Dimensions here!
+            chkArray = new CheckArray(2, 5, st);    // <--- PUT right Dimensions here (max.5x5)!
         } catch (MyArraySizeException ex) {
             System.out.printf("\n>>>Catch Array SIZE Triggered! \n");
             ex.printStackTrace();
