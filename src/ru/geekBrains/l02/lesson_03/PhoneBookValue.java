@@ -1,4 +1,4 @@
-package ru.geekBrains.l02.lesson03;
+package ru.geekBrains.l02.lesson_03;
 
 public class PhoneBookValue {
     private String surame;
