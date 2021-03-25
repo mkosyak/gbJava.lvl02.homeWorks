@@ -1,4 +1,4 @@
-package ru.geekBrains.l02.lesson3;
+package ru.geekBrains.l02.lesson03;
 
 import java.util.HashMap;
 import java.util.Iterator;
